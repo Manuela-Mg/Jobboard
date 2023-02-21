@@ -1,0 +1,235 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.log-body{
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(13deg, rgba(229, 242, 255) 5%, rgba(254, 223, 243) 50%, rgba(255, 244, 227) 90%);
+    height: 100vh;
+    width: 100%;
+}
+
+.title-spec h1{
+    font-size: 1em;
+    z-index: 5;
+}
+
+.logo{
+    width: 40px;
+    border-radius: 40%;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 15px;
+}
+
+.login-header h1:nth-child(1)
+{
+    position: absolute;
+    transform: translate(2%, 50%);
+    top: 20px;
+    font-size: 1.5em;
+    color: transparent;
+    -webkit-text-stroke: 0.7px #000000;
+}
+
+.login-header h1:nth-child(2)
+{
+    position: absolute;
+    transform: translate(20%, 70%);
+    top: 50px;
+}
+
+.login-header h1:nth-child(3){
+    position: absolute;
+    font-size: 1.5em;
+    transform: translate(2%, 52%);
+    top: 65px;
+    color: transparent;
+    -webkit-text-stroke: 0.7px #000000;
+}
+
+.log-main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.log-main::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 68%;
+    background: linear-gradient(80deg, #F4DDFF, #FFA384, #FF5972);
+    border-radius: 50%;
+    left: -10%;
+    top: -35%;
+    filter: blur(90px);
+}
+
+.log-main::after{
+    content: "";
+    position: absolute;
+    width: 54%;
+    height: 58%;
+    background: linear-gradient(80deg, #B3C5E8, #8A84FF, #9174A8);
+    border-radius: 50%;
+    right: -10%;
+    bottom: -25%;
+    filter: blur(90px);
+}
+
+.log-ctr{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-user{
+    z-index: 500;
+    top: 205px;
+    /* bottom: 110px; */
+    transition: 1.5s ease;
+    position: absolute;
+    height: 420px;
+    width: 70%;
+    background: linear-gradient(135deg, rgba(255, 228, 225, 0.069) 10%, rgba(66, 57, 101, 0.14) 100%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 60px;
+    border: 1px solid rgba(193, 175, 238, 0.21);
+    box-shadow: 0 15px 9px 0 #C9C6CD;
+    box-align: center;
+    padding: 25 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-user lord-icon{
+    width:40px;
+    height:50px;
+    top:25px;
+}
+
+.form-user{
+    position: absolute;
+    top: 95px;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-user input{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.form-user  input[type="email"], input[type="password"], input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #2C2C2DB7;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.form-user input:focus{
+   border-bottom: 2px solid #1D1D1DC6;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.form-user button[type="submit"]{
+    margin-top: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #0C0C0CEB;
+}
+
+.form-user button:hover{
+    background-color: #151515C0;
+}
+
+.form-user a{
+    position: relative;
+    width: 170px;
+    top: 30px;
+    font-size: 14px;
+    color: #464141;
+    font-style: italic;
+}
+
+.form-user a:hover {
+    color: #62656A;
+    text-decoration:dotted;
+}
+
+
+@media screen and (min-width: 520px) {
+
+    .login-header h1:nth-child(1)
+    {
+        font-size: 2em;
+        color: black;
+        -webkit-text-stroke: 0;
+    }
+
+    .login-header h1:nth-child(2)
+    {
+        transform: translate(20%, 50%);
+        top: 60px;
+        font-size: 2em;
+    }
+
+    .login-header h1:nth-child(3){
+        transform: translate(60%, 50%);
+        top: 60px;
+        left: 25px;
+        font-size: 2em;
+        -webkit-text-stroke: 1.3px #000000;
+    }
+
+    .log-user{
+        width: 370px;
+    }
+}
+
+
+@media screen and (min-width: 790px) {
+    .login-header h1:nth-child(1)
+    {
+        font-size: 2.5em;
+    }
+
+    .login-header h1:nth-child(2)
+    {
+        transform: translate(20%, 50%);
+        top: 60px;
+        font-size: 2.5em;
+    }
+
+    .login-header h1:nth-child(3){
+        font-size: 2.5em;
+        transform: translate(60%, 50%);
+        top: 60px;
+        left: 35px;
+        -webkit-text-stroke: 1.8px #000000;
+    }
+}

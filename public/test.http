@@ -1,0 +1,42 @@
+# GET http://127.0.0.1:8000/api/ads HTTP/1.1
+
+POST http://127.0.0.1:8000/api/signup HTTP/1.1
+content-type: application/json
+# user
+{
+    "name": "B traore",
+    "email": "bandiougou.traore@epitech.org",
+    "password": "jobBoard",
+    "phone": "+3346800472"
+}
+# admin login
+{
+     "email": "adam.langosh@example.org",
+     "password": "jobBoard"
+}
+
+# user login
+{
+     "email": "paolo19@example.org",
+     "password": "jobBoard"
+}
+
+# ads 
+{
+  "title": "my new ads",
+  "description": "new ads description",
+  "wages": 11.0,
+  "location": "11 rue ads",
+  "workTime": "8 hrs"
+}
+
+#com
+{
+  "name": "name",
+  "intro": "intro",
+  "address": "address",
+  "phone": "phone",
+  "email": "email",
+  "webSite": "webSite"
+}
+MAILER_DSN=gmail://vomonycom@gmail.com:zeruouonrxstgwec@smtp.gmail.com:465
